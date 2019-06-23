@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rapha's Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="emailButton.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TopNav -->
+
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <!-- <a href="MyTrips.html" id="about"><i class='far fa-address-card'></i> About</a> -->
+        <a href="projects.html"><i class='fas fa-project-diagram'></i> Projects</a>
+        <!-- <a href="#"><i class="fa fa-file-code-o"></i>  Skills</a>
+  <a href="#"><i class='fas fa-graduation-cap'></i> Education</a>
+  <a href="#"><i class='fas fa-chart-line'></i> Weblogue</a> -->
+        <a href="#footer"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <div id="banner" data-aos="fade-right">
+        <div><img src="./IMG_0583.JPG" class="contactPic" alt="My Photo"></div>
+        <div class="hireMe" data-aos="fade-right">
+            <h1>Get in touch!</h1><br>
+            <hr>
+            <br>
+        </div>
+        <div class="email">
+            <a href="mailto:rraphael_nunes1@hotmail.com">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                rraphael_nunes1@hotmail.com</a>
+        </div>
+    </div>
+
+    <div class="skills">
+
+        <div class="form" action="" target="_blank" data-aos="fade-down">
+            <form>
+                <input class="namebtn" type="text" name="Name" placeholder="Name:"><br>
+                <input class="emailbtn" type="text" name="Email" placeholder="e-mail:"><br>
+                <textarea class="messagebtn" name="message" rows="10" cols="30" placeholder="Your Message:"></textarea>
+                <p class="wordcount"><span class='characters'>140</span> characters remaining</p>
+            </form>
+        </div>
+        <br><br>
+        <button class="submitbtn" type="submit" data-aos="fade-up">Let's Build Something Special</button>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div>
+            <a href="mailto:rraphael_nunes1@hotmail.com"><i class="fa fa-fw fa-envelope"></i></a>
+            <a class="linked" href="https://www.linkedin.com/in/raphael-nunes-830185122/" target="_blank"><i class='fab fa-linkedin'></i></a>
+            <a class="free" href="https://github.com/rdefa001" target="_blank"><i class='fab fa-github'></i></a>
+            <a class="git" href="https://www.freecodecamp.org/raphael%20nunes"><i class='fab fa-free-code-camp'></i></a>
+            <a class="code" href=" https://www.codecademy.com/Rdefa001" target="_blank"><svg viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                    <path id="codeCademy" fill="#1bf2ea" d="M15.885 13.152h-3.73c-.062 0-.113.04-.113.115v1.01c0 .063.038.114.114.114h3.73c.063 0 .114-.03.114-.11v-1.01c0-.07-.038-.11-.115-.11zm-4.91-11.508c.01.023.02.046.032.08V14.25c0 .04-.013.064-.025.077-.026.026-.05.04-.09.04H.102c-.025 0-.05 0-.064-.014-.025-.026-.038-.05-.038-.09V1.71c0-.05.026-.088.064-.1h10.828c.026 0 .064.012.077.024v.01zM1.212 13.05c0 .05.026.09.064.102h8.428c.038-.012.064-.05.064-.102V2.937c0-.05-.027-.09-.065-.102H1.277c-.038.013-.064.05-.064.102V13.05zm3.41-5.63c.434 0 .715.165.97.46.038.05.102.063.153.024l.69-.613c.05-.03.038-.11.013-.15-.423-.51-1.036-.83-1.827-.83-1.06 0-1.86.53-2.17 1.47-.11.33-.16.75-.16 1.32s.05.99.17 1.32c.31.95 1.11 1.47 2.17 1.47.8 0 1.41-.32 1.83-.81.03-.05.04-.11-.01-.15l-.69-.61c-.05-.03-.11-.03-.15.02-.26.3-.53.46-.97.46-.47 0-.83-.23-.98-.69-.09-.26-.11-.58-.11-.99 0-.41.03-.71.12-.98.16-.44.51-.67.99-.67z" /></svg></a>
+        </div>
+        <br>
+        <div class="copyrights">
+            <h6>Made in UK &copy; 2019 Raphael Nunes, All Rights Reserved.</h6>
+        </div>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            delay: 400,
+            once: true,
+            disable: 'mobile'
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/*===========================Skill SECTION============================*/
+
+/*=======Reminder some code is still in main.css file =================*/
+
+.html {
+    height: 70px;
+    width: 80px;
+}
+
+.html1 {
+    height: 70px;
+    width: 80px;
+}
+
+.containerSkills {
+    position: relative;
+    top: 300px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px 20px;
+    margin: auto;
+}
+
+.containerSkills .boxSkills {
+    position: relative;
+    height: 200px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.containerSkills .boxSkills:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+    border-radius: 4px;
+    border: 2px solid #1bf2ea;
+}

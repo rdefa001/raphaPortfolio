@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Heveltica, sans-serif;
+    /* background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc);*/
+
+    background-image: url(https://i.postimg.cc/5tQhGZ3s/christopher-gower-291246-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1bf2ea;
+    /*color:#343148;*/
+    /*background-color: #59CD90;*/
+    /*color: #3FA7D6;*/
+}
+
+.navbar {
+    width: 100%;
+    /*background-color: #343148;*/
+    background-color: #060c21;
+    overflow: auto;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    padding: 16px 33px;
+    color: #1bf2ea;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #f08080;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #f08080;
+}
+
+.active:hover {
+    background-color: #1bf2ea;
+    color: #f08080;
+}
+
+#banner {
+    background-color: #5d02ff;
+    min-height: 70vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+
+}
+
+.bio {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    color: #1bf2ea;
+    font-size: 23px;
+}
+
+.about-Me {
+    height: auto;
+    width: 500px;
+    text-align: center;
+    margin: 5px auto;
+    background: rgba(6, 12, 33, .88);
+    /*background: rgba(6, 21, 54, .7);*/
+    border-radius: 4px;
+    color: #1bf2ea;
+    padding: 15px;
+    display: none;
+}
+
+.about,
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.hireMe {
+    color: #777;
+}
+
+h3 {
+    text-align: center;
+}
+
+.profilepic {
+    height: 200px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 44%;
+    /* border-radius: 50%;*/
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.features-h2 {
+    margin-left: 45%;
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+.h2 {
+    position: relative;
+    top: 200px;
+    margin-left: 45%;
+    z-index: 1;
+    font-size: 30px;
+}
+
+hr {
+    margin-right: 41.5%;
+    margin-left: 45.5%;
+    border: 4px solid #1bf2ea;
+    border-radius: 5px;
+}
+
+.skills-hr {
+    position: relative;
+    top: 220px;
+    margin-right: 45%;
+    margin-left: 45.5%;
+    border: 4px solid #1bf2ea;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+/*=======================SKILLS SECTION==================================*/
+.skills {
+    margin: 0;
+    padding: 0;
+    background-color: #5d02ff;
+    min-height: 80vh;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+
+}
+
+/*=======================FOOTER SECTION==================================*/
+.footer {
+    /*background-color: #343148;*/
+    background-color: #060c21;
+    padding: 35px;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 0 2px 0 0;
+    color: #1bf2ea;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    color: lightcoral;
+}
+
+svg {
+    height: 20px;
+    width: 20px;
+}
+
+a svg #codeCademy:hover {
+    fill: lightcoral;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    #banner {
+        margin: 0;
+    }
+
+    .profilepic {
+        margin-left: 150px;
+    }
+
+
+    .features-h2 {
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+
+    .h2 {
+        position: relative;
+        top: 200px;
+        margin-left: 180px;
+        z-index: 1;
+    }
+
+    hr {
+        margin-right: 30%;
+        margin-left: 37%;
+        border: 4px solid #1bf2ea;
+        border-radius: 5px;
+    }
+
+    .skills-hr {
+        position: relative;
+        top: 220px;
+        margin-right: 36%;
+        margin-left: 37%;
+        border: 4px solid #1bf2ea;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .html1 {
+        display: none;
+    }
+
+    footer a {
+        display: block;
+        width: 100%;
+    }
+
+}

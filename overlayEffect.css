@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, heveltica, sans-serif;
+}
+
+.modal-open {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+    animation: modal-open .5s;
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: rgba(6, 12, 33, .88);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+}
+
+.modal-header {
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+.modal-header .modal-close {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    font-size: 25px;
+    color: #1bf2ea;
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-body {
+    color: #1bf2ea;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal-body ul {
+    list-style-type: none;
+}
+
+.modal-body li {
+    display: inline-block;
+    padding-right: 6px;
+}
+
+.modal-body p {
+    text-align: justify;
+    color: #1bf2ea;
+}
+
+.modal-body,
+.projectInfo {
+    list-style-type: none;
+    line-height: 1.8em;
+    color: #1bf2ea;
+    font-size: 20px;
+    text-align: center;
+}
+
+@keyframes modal-open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .modal-content {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(35deg,
+            #ccffff,
+            #ffcccc);
+}
+
+.navbar {
+    width: 100%;
+    background-color: #343148;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 16px 33px;
+    color: #1bf2ea;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #f08080;
+
+}
+
+#grid-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px 15px;
+    margin: 150px 50px 50px 70px;
+
+}
+
+
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    color: #1bf2ea;
+    padding: 10px;
+    font-size: 27px;
+    color: #1bf2ea;
+}
+
+p {
+    text-align: center;
+}
+
+#c1,
+#c2,
+#c3,
+#c4,
+#c5,
+#c6 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #ffffff;
+}
+
+#c1 {
+    background-image: url(https://i.postimg.cc/ZKVH99YC/senna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1bf2ea;
+}
+
+#c2 {
+    background-image: url(https://i.postimg.cc/JzL1C30N/austin-gardner-474402-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1bf2ea;
+}
+
+#c3 {
+    background-image: url(https://i.postimg.cc/L6LY4xXt/the-creative-exchange-373981-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1bf2ea;
+}
+
+#c4 {
+    background-image: url(https://i.postimg.cc/cLMVRKNd/pre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1bf2ea;
+}
+
+#c5 {
+    background-image: url(https://i.postimg.cc/zv3nr2gR/alex-kotliarskyi-361081-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1bf2ea;
+}
+
+#c6 {
+    background-image: url(rapha.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1bf2ea;
+}
+
+.fullCard {
+    position: relative;
+    height: 300px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+.links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    transition: 2s ease;
+    font-size: 22px;
+    padding-top: 35%;
+    margin-left: 0;
+    text-align: center;
+    opacity: 0;
+}
+
+.pLinks {
+    text-decoration: none;
+    color: #1bf2ea;
+    border: 1px solid #1bf2ea;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+#c1:hover .links,
+#c2:hover .links,
+#c3:hover .links,
+#c4:hover .links,
+#c5:hover .links,
+#c6:hover .links,
+#c1:hover .overlay,
+#c2:hover .overlay,
+#c3:hover .overlay,
+#c4:hover .overlay,
+#c5:hover .overlay,
+#c6:hover .overlay {
+    opacity: 1;
+}
+
+.pLinks:hover {
+    color: #060c21;
+    background: #1bf2ea;
+}
+
+#c1:hover h2,
+#c2:hover h2,
+#c3:hover h2,
+#c4:hover h2,
+#c5:hover h2,
+#c6:hover h2 {
+    opacity: 0;
+}
+
+
+.wordcount {
+    color: #636c72;
+    font-size: 13px;
+    line-height: 24px;
+    opacity: .8;
+}
+
+.red {
+    color: red;
+}
+
+.footer {
+    background-color: #343148;
+    padding: 35px;
+    text-align: center;
+    color: aliceblue;
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 0 2px 0 0;
+    color: #1bf2ea;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    color: lightcoral;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+
+    #grid-sec {
+        display: block;
+        width: 100%;
+        grid-row-gap: 5px;
+        border: 1px solid #0a0f4a;
+        margin: 0;
+    }
+
+    #c1,
+    #c2,
+    #c3,
+    #c4,
+    #c5 {
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+    .fullCard {
+        width: 100%;
+    }
+
+
+
+}

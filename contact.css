@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Heveltica, sans-serif;
+    /* background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc */
+    );
+}
+
+.navbar {
+    width: 100%;
+    background-color: #060c21;
+    overflow: auto;
+
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    padding: 16px 33px;
+    color: #1bf2ea;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #f08080;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #f08080;
+}
+
+.active:hover {
+    background-color: #1bf2ea;
+    color: #f08080;
+}
+
+.contactPic {
+    margin: 120px 0 0 800px;
+    width: 350px;
+    height: 350px;
+
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.hireMe {
+    position: relative;
+    bottom: 320px;
+    left: 100px;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    font-size: 30px;
+    padding: 30px;
+}
+
+h1 {
+    color: #1bf2ea;
+}
+
+.hireMe a {
+    color: #1bf2ea;
+    text-decoration: none;
+}
+
+hr {
+    margin-right: 70px;
+    margin-left: 70px;
+    border: 4px solid #1bf2ea;
+    border-radius: 5px;
+}
+
+#banner {
+    margin-bottom: 100px;
+}
+
+.form,
+.namebtn,
+.emailbtn,
+.messagebtn {
+    position: relative;
+    top: 80px;
+    border-radius: 5px;
+    margin: auto;
+    width: 40%;
+}
+
+.namebtn,
+.emailbtn,
+.messagebtn {
+    /*background-color: #343148;*/
+    background-color: #060c21;
+    border: 1px solid #1bf2ea;
+    color: #1bf2ea;
+    padding: 10px 5px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.wordcount {
+    position: relative;
+    top: 100px;
+    color: #1bf2ea;
+    font-size: 13px;
+    line-height: 24px;
+    opacity: .8;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+
+.submitbtn {
+    position: relative;
+    top: 150px;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-left: 560px;
+}
+
+.submitbtn:hover {
+    background-color: #1bf2ea;
+    color: #343148;
+    border: 2px solid #343148;
+}
+
+.footer {
+    /*background-color: #343148;*/
+    background-color: #060c21;
+    padding: 35px;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 0 2px 0 0;
+    color: #1bf2ea;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    color: lightcoral;
+}
+
+@media screen and (max-width: 600px) {
+
+    .contactPic {
+        margin: 0;
+        display: none;
+    }
+
+    .hireMe {
+        position: relative;
+        top: 150px;
+        left: 0px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .form,
+    .namebtn,
+    .emailbtn,
+    .messagebtn,
+    .submitbtn {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .submitbtn {
+        margin-left: 0px;
+    }
+
+    footer a {
+        display: block;
+        width: 100%;
+    }
