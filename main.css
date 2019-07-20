@@ -203,8 +203,6 @@ a svg #codeCademy:hover {
     #banner {
         display:block;
         width:100%;
-        -webkit-clip-path: none;
-        clip-path: none;
     }
 
     .profilepic {
