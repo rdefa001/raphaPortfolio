@@ -191,6 +191,7 @@ a svg #codeCademy:hover {
 
     .navbar {
         position: static;
+        max-width: 100%;
     }
 
     .navbar a {
