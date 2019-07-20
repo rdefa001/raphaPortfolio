@@ -226,6 +226,10 @@ a svg #codeCademy:hover {
         border: 4px solid #1bf2ea;
         border-radius: 5px;
     }
+    
+    .skills{
+        max-width: 100%;
+    }
 
     .skills-hr {
         position: relative;
