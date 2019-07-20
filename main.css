@@ -201,6 +201,7 @@ a svg #codeCademy:hover {
 
     #banner {
         margin: 0;
+        max-width: 100%;
     }
 
     .profilepic {
@@ -228,6 +229,7 @@ a svg #codeCademy:hover {
     }
     
     .skills{
+        margin: 0;
         max-width: 100%;
     }
 
