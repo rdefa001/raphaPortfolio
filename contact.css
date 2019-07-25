@@ -181,6 +181,15 @@ hr {
     margin: 0;
     padding: 15px 15px;
     text-transform: lowercase;
+    }
+    
+    .email a{
+    font-size: 20px;
+    }
+    
+    hr{
+    display:none;
+    }
 
     .navbar {
         position: static;
