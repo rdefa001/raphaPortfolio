@@ -172,6 +172,15 @@ hr {
         top: 150px;
         left: 0px;
     }
+    
+    .email {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    max-width: 100%;
+    margin: 0;
+    padding: 15px 15px;
+    text-transform: lowercase;
 
     .navbar {
         position: static;
