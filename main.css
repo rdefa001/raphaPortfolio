@@ -260,7 +260,10 @@ a svg #codeCademy:hover {
     .html1 {
         display: none;
     }
-
+    footer  {
+       position: fixed;
+        width: 100%;
+    }
     footer a {
         display: block;
         width: 100%;
