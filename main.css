@@ -226,7 +226,8 @@ a svg #codeCademy:hover {
     .h2 {
         position: relative;
         top: 200px;
-        margin-left: 180px;
+        margin:0px;
+        text-align: center;
         z-index: 1;
     }
 
